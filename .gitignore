@@ -8,3 +8,6 @@ __pycache__/
 
 # Ignore local models (unless you want the JSON on GitHub)
 *.json
+
+# Ignore experiment tracking logs
+wandb/
