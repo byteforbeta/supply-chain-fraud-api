@@ -1,0 +1,10 @@
+#Ignore datasets
+data/*.csv
+data/*.parquet
+
+# Ignore virtual environments and cache
+.venv/
+__pycache__/
+
+# Ignore local models (unless you want the JSON on GitHub)
+*.json

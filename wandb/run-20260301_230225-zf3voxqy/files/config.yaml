@@ -1,0 +1,187 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            9kmjtmukhv1d66a24tqp6gfo9gga1kqb:
+                codePath: src\train.py
+                codePathLocal: src\train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                cudaVersion: "12.9"
+                disk:
+                    /:
+                        total: "1000187359232"
+                        used: "182816800768"
+                email: gowthambolli167@gmail.com
+                executable: D:\Youtube Videos\Real Time supplychain fraud detection\.venv\Scripts\python.exe
+                gpu: NVIDIA GeForce GTX 1650
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 1024
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce GTX 1650
+                      uuid: GPU-4a314494-77ea-7823-7983-12273f381372
+                host: LAPTOP-42E4RI4L
+                memory:
+                    total: "8506298368"
+                os: Windows-11-10.0.26200-SP0
+                program: D:\Youtube Videos\Real Time supplychain fraud detection\src\train.py
+                python: CPython 3.14.2
+                root: D:\Youtube Videos\Real Time supplychain fraud detection
+                startedAt: "2026-03-01T17:32:25.325891Z"
+                writerId: 9kmjtmukhv1d66a24tqp6gfo9gga1kqb
+        m: []
+        python_version: 3.14.2
+        t:
+            "1":
+                - 5
+                - 6
+                - 53
+            "2":
+                - 5
+                - 6
+                - 53
+            "3":
+                - 2
+                - 16
+            "4": 3.14.2
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+        visualize:
+            Confusion_Matrix:
+                panel_config:
+                    fieldSettings:
+                        Actual: Actual
+                        Predicted: Predicted
+                        nPredictions: nPredictions
+                    panelDefId: wandb/confusion_matrix/v1
+                    stringSettings:
+                        title: Confusion Matrix Curve
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: Confusion_Matrix_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+            Feature Importance:
+                panel_config:
+                    fieldSettings:
+                        label: Feature
+                        value: Importance
+                    panelDefId: wandb/bar/v0
+                    stringSettings:
+                        title: XGBoost Feature Importance
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: Feature Importance_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+            PR_Curve:
+                panel_config:
+                    fieldSettings:
+                        class: class
+                        x: recall
+                        "y": precision
+                    panelDefId: wandb/area-under-curve/v0
+                    stringSettings:
+                        title: Precision-Recall Curve
+                        x-axis-title: Recall
+                        y-axis-title: Precision
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: PR_Curve_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+            ROC_Curve:
+                panel_config:
+                    fieldSettings:
+                        class: class
+                        x: fpr
+                        "y": tpr
+                    panelDefId: wandb/area-under-curve/v0
+                    stringSettings:
+                        title: ROC Curve
+                        x-axis-title: False positive rate
+                        y-axis-title: True positive rate
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: ROC_Curve_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+learning_rate:
+    value: 0.1
+max_depth:
+    value: 6
+n_estimators:
+    value: 200
+random_state:
+    value: 42
+test_size:
+    value: 0.2

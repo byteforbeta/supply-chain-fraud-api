@@ -1,0 +1,9 @@
+Loading and cleaning data...
+Traceback (most recent call last):
+  File "D:\Youtube Videos\Real Time supplychain fraud detection\src\train.py", line 47, in <module>
+    df = df.astype(category)
+  File "D:\Youtube Videos\Real Time supplychain fraud detection\.venv\Lib\site-packages\pandas\core\generic.py", line 6505, in astype
+    raise KeyError(
+    ...<3 lines>...
+    )
+KeyError: "Only a column name can be used for the key in a dtype mappings argument. 'Order Customer Id' not found in columns."

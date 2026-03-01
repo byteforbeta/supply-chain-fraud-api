@@ -1,0 +1,24 @@
+2026-03-01 22:54:36,973 INFO    MainThread:47920 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-01 22:54:36,973 INFO    MainThread:47920 [wandb_setup.py:_flush():81] Configure stats pid to 47920
+2026-03-01 22:54:36,974 INFO    MainThread:47920 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-01 22:54:36,974 INFO    MainThread:47920 [wandb_init.py:setup_run_log_directory():717] Logging user logs to D:\Youtube Videos\Real Time supplychain fraud detection\wandb\run-20260301_225436-0vcprn1y\logs\debug.log
+2026-03-01 22:54:36,974 INFO    MainThread:47920 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to D:\Youtube Videos\Real Time supplychain fraud detection\wandb\run-20260301_225436-0vcprn1y\logs\debug-internal.log
+2026-03-01 22:54:36,976 INFO    MainThread:47920 [wandb_init.py:init():844] calling init triggers
+2026-03-01 22:54:36,976 INFO    MainThread:47920 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'test_size': 0.2, 'random_state': 42, 'max_depth': 6, 'learning_rate': 0.1, 'n_estimators': 200, '_wandb': {}}
+2026-03-01 22:54:36,976 INFO    MainThread:47920 [wandb_init.py:init():892] starting backend
+2026-03-01 22:54:40,435 INFO    MainThread:47920 [wandb_init.py:init():895] sending inform_init request
+2026-03-01 22:54:40,643 INFO    MainThread:47920 [wandb_init.py:init():903] backend started and connected
+2026-03-01 22:54:41,186 INFO    MainThread:47920 [wandb_init.py:init():973] updated telemetry
+2026-03-01 22:54:41,188 INFO    MainThread:47920 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-01 22:54:43,639 INFO    MainThread:47920 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-01 22:54:45,160 INFO    MainThread:47920 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-01 22:54:45,161 INFO    MainThread:47920 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-01 22:54:45,161 INFO    MainThread:47920 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-01 22:54:45,161 INFO    MainThread:47920 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-01 22:54:45,241 INFO    MainThread:47920 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-01 22:55:23,408 INFO    MainThread:47920 [wandb_run.py:_config_callback():1403] config_cb ('_wandb', 'visualize', 'Feature Importance') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/bar/v0', 'fieldSettings': {'label': 'Feature', 'value': 'Importance'}, 'stringSettings': {'title': 'XGBoost Feature Importance'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Feature Importance_table'}], 'fields': []}]}]}}} None
+2026-03-01 22:55:28,234 INFO    MainThread:47920 [wandb_run.py:_config_callback():1403] config_cb ('_wandb', 'visualize', 'PR_Curve') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'recall', 'y': 'precision', 'class': 'class'}, 'stringSettings': {'title': 'Precision-Recall Curve', 'x-axis-title': 'Recall', 'y-axis-title': 'Precision'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'PR_Curve_table'}], 'fields': []}]}]}}} None
+2026-03-01 22:55:29,515 INFO    MainThread:47920 [wandb_run.py:_config_callback():1403] config_cb ('_wandb', 'visualize', 'ROC_Curve') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'fpr', 'y': 'tpr', 'class': 'class'}, 'stringSettings': {'title': 'ROC Curve', 'x-axis-title': 'False positive rate', 'y-axis-title': 'True positive rate'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'ROC_Curve_table'}], 'fields': []}]}]}}} None
+2026-03-01 22:55:32,679 INFO    wandb-AsyncioManager-main:47920 [service_client.py:_forward_responses():134] Reached EOF.
+2026-03-01 22:55:32,679 INFO    wandb-AsyncioManager-main:47920 [mailbox.py:close():155] Closing mailbox, abandoning 2 handles.
