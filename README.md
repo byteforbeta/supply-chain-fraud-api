@@ -1,15 +1,15 @@
-# Real-Time Supply Chain Fraud Detection API 🛑📦
+# Real-Time Supply Chain Fraud Detection API
 
 An end-to-end Machine Learning operations (MLOps) pipeline and real-time REST API built to detect suspected fraud in supply chain transactions.
 
-## 🏗️ Architecture & Tech Stack
+## Architecture & Tech Stack
 * **Model:** XGBoost Classifier (handling highly imbalanced data via `scale_pos_weight`)
 * **Experiment Tracking:** Weights & Biases (W&B) for logging PR-AUC, Confusion Matrices, and hyperparameter tuning.
 * **Model Registry:** W&B Artifacts for versioning the `.json` model weights.
 * **Serving:** FastAPI & Uvicorn for sub-millisecond, real-time inference.
 * **Data Processing:** Pandas (Feature engineering, frequency encoding, dynamic categorization).
 
-## 🧠 The Machine Learning Pipeline (`src/train.py`)
+## The Machine Learning Pipeline (`src/train.py`)
 Fraud detection is inherently imbalanced. Instead of relying on misleading metrics like Accuracy, this model is optimized for **Precision-Recall AUC (PR-AUC)** and **Recall**. 
 
 The training script automatically:
@@ -18,12 +18,12 @@ The training script automatically:
 3. Logs interactive ROC and PR curves to a W&B dashboard.
 4. Serializes the winning model and pushes it to the remote Model Registry.
 
-## ⚡ Real-Time Inference (`src/app.py`)
+## Real-Time Inference (`src/app.py`)
 The model is wrapped in a robust FastAPI application designed to act as a microservice for a payment processing backend. 
 * **Data Validation:** Uses Pydantic to strictly type-check incoming JSON payloads.
 * **Cold-Start Protection:** Implements a fallback baseline template to prevent the model from crashing when encountering unseen categorical variables in production.
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 1. **Clone the repository:**
    ```bash
